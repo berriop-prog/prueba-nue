@@ -4,9 +4,9 @@
       <Navbar />
       <Banner />
       <SectionA />
-      <Card />
-      <Direction />
-      <Footer />
+      <Card/>
+      <Direction/>
+      <Footer/>
     </v-app>
   </div>
 </template>
@@ -18,7 +18,7 @@ import Banner from './components/Banner';
 import SectionA from './components/SectionA';
 import Card from './components/Card';
 import Direction from './components/Direction';
-import Footer from './components/Footer';
+import Footer  from './components/Footer'
 
 export default {
   name: 'App',
@@ -29,7 +29,7 @@ export default {
     SectionA,
     Card,
     Direction,
-    Footer,
+    Footer
   },
 
   data: () => ({

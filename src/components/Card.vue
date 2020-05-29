@@ -1,29 +1,65 @@
 <template>
-  <div
-    style="width: 100%; heigth: 332px; padding: 80px 20px; display: flex; flex-direction: row"
+  <v-container
+    style="width: 100%; heigth: 332px; padding: 80px 20px; background-color: #ffffff;"
   >
-    <div style="width: 328px; heigth: 317px; padding: 40px">
-      <div style="width: 245px; heigth: 237px; border-top: 2px solid #2B2B2B; padding: 15px 0px">
-          <h3 style="font-size: 25px; color: #3A899A">Programas</h3>
+    <v-row no-gutters>
+      <v-col>
+        <v-card class="pa-5 mt-5" outlined tile style="border: none; ">
+          <h3 style="font-size: 25px; color: #3A899A; margin: 20px 0 0 0;;  padding: 15px 0; border-top: 2px solid #2B2B2B">
+            Programas
+          </h3>
           <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-          </ul>          
-      </div>
-    </div>
-    <div style="width: 328px; heigth: 317px; padding: 40px">
-      <div style="width: 245px; heigth: 237px; border-top: 2px solid #2B2B2B; padding: 15px 0px">
-          <h3 style="font-size: 25px; color: #3A899A">Terapias</h3>
-      </div>
-    </div>
-    <div style="width: 328px; heigth: 317px; padding: 40px">
-      <div style="width: 245px; heigth: 237px; border-top: 2px solid #2B2B2B; padding: 15px 0px">
-          <h3 style="font-size: 25px; color: #3A899A">Consultas</h3>
-      </div>
-    </div>
-  </div>
+            <li style="font-size: 17px" v-for="programa in programas">
+              {{ programa }}
+            </li>
+          </ul>
+        </v-card>
+      </v-col>
+      <v-col order="12">
+        <v-card class="pa-5 mt-5" outlined tile style="border: none">
+          <h3 style="font-size: 25px; color: #3A899A; margin: 20px 0 0 0;  padding: 15px 0; border-top: 2px solid #2B2B2B">
+            Consultas
+          </h3>
+          <li style="font-size: 17px" v-for="consulta in consultas">
+            {{ consulta }}
+          </li>
+        </v-card>
+      </v-col>
+      <v-col order="1">
+        <v-card class="pa-5 mt-5" outlined tile style="border: none">
+          <h3 style="font-size: 25px; color: #3A899A; margin: 20px 0 0 0;  padding: 15px 0; border-top: 2px solid #2B2B2B">
+            Terapias
+          </h3>
+          <li style="font-size: 17px" v-for="terapia in terapias">
+            {{ terapia }}
+          </li>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
+
 <script>
-export default {};
+export default {
+  name: 'Card',
+  data() {
+    return {
+      programas: [
+        'Programa de EPOC y ASMA',
+        'Programa de SAHOS',
+        'Programa Dejar de Fumar',
+      ],
+      terapias: [
+        'Rehabilitación Pulmonar',
+        'Terapia Miofuncional Orofacial',
+        'Terapia Cognitivo Conductual',
+      ],
+      consultas: [
+        'Consulta de Neumología',
+        'Consulta de Nutrición',
+        'Consulta de Psicología',
+      ],
+    };
+  },
+};
 </script>

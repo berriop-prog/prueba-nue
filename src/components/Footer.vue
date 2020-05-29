@@ -1,5 +1,5 @@
 <template>
-      <v-card height="150">
+      <v-card height="40">
     <v-footer
       absolute     
       style="background-color: #3A899A; color: white"
