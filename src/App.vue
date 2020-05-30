@@ -5,6 +5,7 @@
       <Banner />
       <SectionA />
       <Card/>
+      <Button/>
       <Direction/>
       <Footer/>
     </v-app>
@@ -17,6 +18,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import SectionA from './components/SectionA';
 import Card from './components/Card';
+import Button from './components/Button';
 import Direction from './components/Direction';
 import Footer  from './components/Footer'
 
@@ -28,6 +30,7 @@ export default {
     Banner,
     SectionA,
     Card,
+    Button,
     Direction,
     Footer
   },

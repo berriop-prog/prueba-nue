@@ -1,6 +1,6 @@
 <template>
   <v-container
-    style="width: 100%; heigth: 332px; padding: 80px 20px; background-color: #ffffff;"
+    style="width: 100%; heigth: 332px; padding: 80px 20px 0 0; background-color: #ffffff;"
   >
     <v-row no-gutters>
       <v-col>
