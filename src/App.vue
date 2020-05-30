@@ -19,6 +19,7 @@ import Banner from './components/Banner';
 import SectionA from './components/SectionA';
 import Card from './components/Card';
 import Button from './components/Button';
+import Form from './components/Form'
 import Direction from './components/Direction';
 import Footer  from './components/Footer'
 
@@ -31,6 +32,7 @@ export default {
     SectionA,
     Card,
     Button,
+    Form,
     Direction,
     Footer
   },
