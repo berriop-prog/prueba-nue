@@ -1,4 +1,9 @@
 # neumomed
+## Cambio del package.json
+
+"scripts": {
+    "start": "vue-cli-service serve"
+  }
 
 ## Project setup
 ```
