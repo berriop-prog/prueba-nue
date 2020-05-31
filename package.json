@@ -2,9 +2,12 @@
   "name": "neumomed",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://berriop-prog.github.io/prueba-nue",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
@@ -23,6 +26,7 @@
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "gh-pages": "^3.0.0",
     "vue-cli-plugin-vuetify": "^2.0.5",
     "vue-template-compiler": "^2.6.11"
   },
