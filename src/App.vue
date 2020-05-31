@@ -4,10 +4,10 @@
       <Navbar />
       <Banner />
       <SectionA />
-      <Card/>
-      <Button/>
-      <Direction/>
-      <Footer/>
+      <Card />
+      <Button />
+      <Direction />
+      <Footer />
     </v-app>
   </div>
 </template>
@@ -19,9 +19,8 @@ import Banner from './components/Banner';
 import SectionA from './components/SectionA';
 import Card from './components/Card';
 import Button from './components/Button';
-import Form from './components/Form'
 import Direction from './components/Direction';
-import Footer  from './components/Footer'
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -32,9 +31,8 @@ export default {
     SectionA,
     Card,
     Button,
-    Form,
     Direction,
-    Footer
+    Footer,
   },
 
   data: () => ({
@@ -47,6 +45,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-carousel hide-delimiters cycle style="widht: 1022; height: 500px">
+  <v-carousel hide-delimiters cycle style="widht: 1200; height: 500px">
     <v-carousel-item style="height: 100%"
       v-for="(item,i) in items"
       :key="i"
