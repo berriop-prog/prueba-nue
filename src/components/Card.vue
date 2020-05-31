@@ -9,7 +9,7 @@
             Programas
           </h3>
           <ul>
-            <li style="font-size: 17px" v-for="programa in programas">
+            <li style="font-size: 17px" v-for="(programa, i) in programas" :key="i">
               {{ programa }}
             </li>
           </ul>
@@ -20,7 +20,7 @@
           <h3 style="font-size: 25px; color: #3A899A; margin: 20px 0 0 0;  padding: 15px 0; border-top: 2px solid #2B2B2B">
             Consultas
           </h3>
-          <li style="font-size: 17px" v-for="consulta in consultas">
+          <li style="font-size: 17px" v-for="(consulta, i) in consultas" :key="i">
             {{ consulta }}
           </li>
         </v-card>
@@ -30,7 +30,7 @@
           <h3 style="font-size: 25px; color: #3A899A; margin: 20px 0 0 0;  padding: 15px 0; border-top: 2px solid #2B2B2B">
             Terapias
           </h3>
-          <li style="font-size: 17px" v-for="terapia in terapias">
+          <li style="font-size: 17px" v-for="(terapia, i) in terapias" :key="i">
             {{ terapia }}
           </li>
         </v-card>
